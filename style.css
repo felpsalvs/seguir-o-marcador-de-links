@@ -11,7 +11,7 @@ html {
 
 body {
     min-height: 100vh;
-    margin: 0;
+    margin: 0 !important;
     font-family: sans-serif;
     background: linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
         linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
@@ -34,13 +34,9 @@ a {
     border-radius: 20px;
 }
 
-a:hover {
-    background: rgba(0,0, 0, 0.1);
-}
-
 .highlight {
     transition: all 0.2s;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
     position: absolute;
     top: 0;
     background: #fff;
@@ -48,7 +44,7 @@ a:hover {
     z-index: -1;
     border-radius: 20px;
     display: block;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 .menu {
